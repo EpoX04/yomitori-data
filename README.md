@@ -32,3 +32,23 @@ enthaltenen Tatoeba-Sätze bleiben CC BY 2.0 FR.
 | `detector__PP-OCRv6_det_small.onnx` | PaddleOCR PP-OCRv6 (Detektion), ONNX von RapidOCR | Apache-2.0 |
 
 Die Modelle sind unverändert weitergegeben (nur umbenannt: `ordner__datei`).
+
+## Änderungen
+
+- **Wörterbuch:** Die Quelldateien wurden mit `pnpm dict:build` (siehe Yomitori, `packages/dict`)
+  in eine SQLite-Datenbank umgewandelt: Einträge, Lesungen, Bedeutungen (Englisch, Deutsch),
+  Kanji-Angaben, Namen, Häufigkeiten und Tonhöhenakzente wurden ausgewählt und neu
+  strukturiert; Tatoeba-Sätze wurden auf Sätze mit englischer oder deutscher Übersetzung
+  beschränkt und den Wörterbucheinträgen zugeordnet (höchstens 30 je Eintrag). Inhalte
+  wurden nicht umformuliert.
+- **Modelle:** unverändert; nur die Dateinamen tragen den Zielordner als Präfix.
+
+## Lizenztexte
+
+- Apache License 2.0: [`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt) (liegt auch dem Release bei)
+- CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+- CC BY 2.0 FR: https://creativecommons.org/licenses/by/2.0/fr/legalcode
+- EDRDG-Lizenzerklärung: https://www.edrdg.org/edrdg/licence.html
+
+Die Daten werden ohne Gewähr weitergegeben. Rechte und Urheberschaft bleiben bei den genannten
+Projekten.
