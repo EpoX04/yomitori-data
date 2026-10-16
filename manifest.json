@@ -1,0 +1,117 @@
+{
+  "version": "v1",
+  "repository": "EpoX04/yomitori-data",
+  "components": [
+    {
+      "id": "dictionary",
+      "name": "Wörterbuch (JMdict, KANJIDIC2, JMnedict, Jitendex, Jiten, Kanjium, Tatoeba)",
+      "license": "CC BY-SA 4.0 (Tatoeba-Sätze: CC BY 2.0 FR)",
+      "required": true,
+      "files": [
+        {
+          "asset": "dict.sqlite.gz",
+          "target": "dict.sqlite",
+          "gzip": true,
+          "size": 228482411,
+          "sha256": "82d9f0e77394357da28ded5d10c2113de2c22d7a2a2155ce852b1fab8e0909d7"
+        }
+      ]
+    },
+    {
+      "id": "manga-ocr",
+      "name": "Texterkennung manga-ocr (kha-white, ONNX von onnx-community)",
+      "license": "Apache-2.0",
+      "required": true,
+      "files": [
+        {
+          "asset": "manga-ocr__encoder_model.onnx",
+          "target": "manga-ocr/encoder_model.onnx",
+          "size": 343377067,
+          "sha256": "df35f64c2400ea860c70a2d06f2a1f99892374a78c89fcf35308076557a3863f"
+        },
+        {
+          "asset": "manga-ocr__decoder_model.onnx",
+          "target": "manga-ocr/decoder_model.onnx",
+          "size": 117445718,
+          "sha256": "31ca14d6dee6b3966144e128d0481d5a91f5083cbced81fe7a9571713fa50cd4"
+        },
+        {
+          "asset": "manga-ocr__vocab.txt",
+          "target": "manga-ocr/vocab.txt",
+          "size": 24072,
+          "sha256": "344fbb6b8bf18c57839e924e2c9365434697e0227fac00b88bb4899b78aa594d"
+        },
+        {
+          "asset": "manga-ocr__config.json",
+          "target": "manga-ocr/config.json",
+          "size": 75028,
+          "sha256": "0b45d5253cef67122d2d35b32408ccffa406a87d560e2c3b7ddec3a987863f2e"
+        },
+        {
+          "asset": "manga-ocr__generation_config.json",
+          "target": "manga-ocr/generation_config.json",
+          "size": 261,
+          "sha256": "faa07a187c72b147a39f660993bcbdbb85c5fc1a86f8a557d5487945285648c0"
+        },
+        {
+          "asset": "manga-ocr__preprocessor_config.json",
+          "target": "manga-ocr/preprocessor_config.json",
+          "size": 351,
+          "sha256": "445c77049d082004aa07593344d5e1f521f1198228bf586196f70ce7ae021414"
+        }
+      ]
+    },
+    {
+      "id": "paddle",
+      "name": "Texterkennung PaddleOCR v6 (ONNX von RapidOCR)",
+      "license": "Apache-2.0",
+      "required": true,
+      "files": [
+        {
+          "asset": "paddle__PP-OCRv6_rec_medium.onnx",
+          "target": "paddle/PP-OCRv6_rec_medium.onnx",
+          "size": 76629984,
+          "sha256": "eef444829dbbe18d7fea59a3f6eb75647518d2b3a9568d27c92e42940204894b"
+        },
+        {
+          "asset": "paddle__PP-OCRv6_rec_medium.keys.txt",
+          "target": "paddle/PP-OCRv6_rec_medium.keys.txt",
+          "size": 93653,
+          "sha256": "b8b5cba807b350e112ac056c44177c87fc8c394d244f69660cda4d8102c85ae3"
+        }
+      ]
+    },
+    {
+      "id": "detector",
+      "name": "Textdetektion (ogkalu comic-text-and-bubble-detector, PaddleOCR v6)",
+      "license": "Apache-2.0",
+      "required": true,
+      "files": [
+        {
+          "asset": "detector__detector-v4-s_int8.onnx",
+          "target": "detector/detector-v4-s_int8.onnx",
+          "size": 11120765,
+          "sha256": "5fe9e4f576e49d4e7e8b0e029d6d3cdc252abd4694113e1cae120e62c931ea79"
+        },
+        {
+          "asset": "detector__PP-OCRv6_det_small.onnx",
+          "target": "detector/PP-OCRv6_det_small.onnx",
+          "size": 9929594,
+          "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f"
+        },
+        {
+          "asset": "detector__config.json",
+          "target": "detector/config.json",
+          "size": 2320,
+          "sha256": "b6d707933e12e9593a7025604be1c95add70a6db371fdd1532e8854e2256e072"
+        },
+        {
+          "asset": "detector__preprocessor_config.json",
+          "target": "detector/preprocessor_config.json",
+          "size": 470,
+          "sha256": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca"
+        }
+      ]
+    }
+  ]
+}
