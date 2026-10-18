@@ -14,13 +14,22 @@ Eine SQLite-Datenbank, gebaut mit `pnpm dict:build` aus:
 | Quelle | Lizenz |
 |---|---|
 | [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html), [KANJIDIC2](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project), [JMnedict](https://www.edrdg.org/enamdict/enamdict_doc.html), KRADFILE – © Electronic Dictionary Research and Development Group | [CC BY-SA 4.0](https://www.edrdg.org/edrdg/licence.html) |
-| [Jitendex](https://jitendex.org) | CC BY-SA 4.0 |
-| [Jiten-Häufigkeitsliste](https://jiten.moe/frequency-dictionaries) | CC BY-SA 4.0 |
-| [Kanjium](https://github.com/mifunetoshiro/kanjium) (Tonhöhenakzent) | CC BY-SA 4.0 |
-| [Tatoeba](https://tatoeba.org) (Beispielsätze) | CC BY 2.0 FR |
+| [Jitendex](https://jitendex.org) – © Stephen Kraus | CC BY-SA 4.0 |
+| [Jiten-Häufigkeitsliste](https://jiten.moe/frequency-dictionaries) – Sirus (jiten.moe) | CC BY-SA 4.0 |
+| [Kanjium](https://github.com/mifunetoshiro/kanjium) (Tonhöhenakzent) – Uros O. (mifunetoshiro) | CC BY-SA 4.0 |
+| [Tatoeba](https://tatoeba.org) (Beispielsätze) – © die jeweiligen Autoren | CC BY 2.0 FR |
 
 Die Datenbank als Ganzes wird als abgeleitetes Werk unter **CC BY-SA 4.0** weitergegeben; die
 enthaltenen Tatoeba-Sätze bleiben CC BY 2.0 FR.
+
+**Tatoeba-Autoren:** Jeder Satz behält in der Tabelle `examples` seine Tatoeba-ID (`id`). Autor und
+Lizenz des einzelnen Satzes stehen unter `https://tatoeba.org/sentences/show/<id>`. Yomitori
+verlinkt jeden angezeigten Beispielsatz dorthin.
+
+**Aktualität:** Die EDRDG-Lizenz verlangt, die Daten regelmäßig zu aktualisieren. Ein fester Takt
+für neue Releases und die Aktualisierung in der App sind in Arbeit
+([Yomitori#99](https://github.com/EpoX04/Yomitori/issues/99)). Stand dieses Releases: JMdict und
+Jitendex vom Oktober 2026.
 
 ## Modelle (ONNX)
 
