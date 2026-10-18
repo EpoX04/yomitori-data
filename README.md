@@ -26,10 +26,12 @@ enthaltenen Tatoeba-Sätze bleiben CC BY 2.0 FR.
 Lizenz des einzelnen Satzes stehen unter `https://tatoeba.org/sentences/show/<id>`. Yomitori
 verlinkt jeden angezeigten Beispielsatz dorthin.
 
-**Aktualität:** Die EDRDG-Lizenz verlangt, die Daten regelmäßig zu aktualisieren. Ein fester Takt
-für neue Releases und die Aktualisierung in der App sind in Arbeit
-([Yomitori#99](https://github.com/EpoX04/Yomitori/issues/99)). Stand dieses Releases: JMdict und
-Jitendex vom Oktober 2026.
+**Aktualität:** Die EDRDG-Lizenz verlangt, die Daten regelmäßig zu aktualisieren. Das Wörterbuch
+wird deshalb monatlich (am 2., per GitHub Action im Yomitori-Repo) aus den aktuellen Quellen neu
+gebaut und als Release `dict-JJJJ-MM-TT` veröffentlicht. Das Manifest trägt Bauzeit (`builtAt`)
+und JMdict-Stand (`jmdictCreated`); die Modelle bleiben im Release, das `release` nennt. Yomitori
+sieht täglich im neuesten Release nach und bietet ein neueres Wörterbuch zum Aktualisieren an
+([Yomitori#99](https://github.com/EpoX04/Yomitori/issues/99)).
 
 ## Modelle (ONNX)
 
