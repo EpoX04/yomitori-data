@@ -1,5 +1,5 @@
 {
-  "version": "v1",
+  "version": "dict-2026-10-18",
   "repository": "EpoX04/yomitori-data",
   "components": [
     {
@@ -12,10 +12,12 @@
           "asset": "dict.sqlite.gz",
           "target": "dict.sqlite",
           "gzip": true,
-          "size": 228482411,
-          "sha256": "82d9f0e77394357da28ded5d10c2113de2c22d7a2a2155ce852b1fab8e0909d7"
+          "size": 228537044,
+          "sha256": "1d60aff1df5dbf559a41dce2e0f0b4ed323a356413591765b7fef58b355f5dc5"
         }
-      ]
+      ],
+      "builtAt": "2026-10-18T13:00:08.042Z",
+      "jmdictCreated": "2026-10-18"
     },
     {
       "id": "manga-ocr",
@@ -59,7 +61,8 @@
           "size": 351,
           "sha256": "445c77049d082004aa07593344d5e1f521f1198228bf586196f70ce7ae021414"
         }
-      ]
+      ],
+      "release": "v1"
     },
     {
       "id": "paddle",
@@ -79,7 +82,8 @@
           "size": 93653,
           "sha256": "b8b5cba807b350e112ac056c44177c87fc8c394d244f69660cda4d8102c85ae3"
         }
-      ]
+      ],
+      "release": "v1"
     },
     {
       "id": "detector",
@@ -111,7 +115,8 @@
           "size": 470,
           "sha256": "7e9e2245806aa3ef068a5321f5eebee3116fa4cec560173231954ffaca930eca"
         }
-      ]
+      ],
+      "release": "v1"
     }
   ]
 }
