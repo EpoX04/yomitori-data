@@ -1,5 +1,5 @@
 {
-  "version": "dict-2026-10-18",
+  "version": "dict-2026-11-02",
   "repository": "EpoX04/yomitori-data",
   "components": [
     {
@@ -12,12 +12,12 @@
           "asset": "dict.sqlite.gz",
           "target": "dict.sqlite",
           "gzip": true,
-          "size": 228537044,
-          "sha256": "1d60aff1df5dbf559a41dce2e0f0b4ed323a356413591765b7fef58b355f5dc5"
+          "size": 228751287,
+          "sha256": "a3d62c70f6ed6685ff9ef36500bdcaba825ea1ba6cf273d32faf59fe60c55c18"
         }
       ],
-      "builtAt": "2026-10-18T13:00:08.042Z",
-      "jmdictCreated": "2026-10-18"
+      "builtAt": "2026-11-02T10:27:52.590Z",
+      "jmdictCreated": "2026-11-02"
     },
     {
       "id": "manga-ocr",
